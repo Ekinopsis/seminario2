@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="{{url_for('inicio')}}">
+            <img class="header_logo" src="static/img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion_enlace" href="{{url_for('inicio')}}">Tienda</a>
+        <a class="navegacion_enlace navegacion_enlace--activo" href="{{url_for('nosotros')}}">¿Quienes somos?</a>
+        <a class="navegacion_enlace" href="error.html">Contacto</a>
+        <a class="navegacion_enlace" href="error.html">Registro</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Bienvenidos</h1>
+        <div class="nosotros">
+            <div class="noso_cont">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et laboriosam quae,
+                    reprehenderit aliquid quisquam quo molestiae numquam iste temporibus cum distinctio earum velit
+                    possimus, tempore dolore sed doloremque dicta unde! </p>
+
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin porta
+                    pretium felis, ac semper nulla pellentesque sed. Morbi condimentum mauris orci. In blandit et dolor
+                    vel consequat. Cras urna odio, euismod sit amet mauris a, varius dignissim neque.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer_texto">Comic Store - Tú tienda virtual de comics!</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="{{url_for('inicio')}}">
+            <img class="header_logo" src="static/img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion_enlace navegacion_enlace--activo" href="{{url_for('inicio')}}">Tienda</a>
+        <a class="navegacion_enlace" href="{{url_for('nosotros')}}">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Spider Man</h1>
+
+        <div class="comic">
+            <img class="comic_imagen" src="static/img/1.jpg" alt="Imagen del Producto">
+
+            <div class="comic_contenido">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quis veniam facilis quas ipsum
+                    consequuntur tenetur? Voluptatum blanditiis explicabo numquam modi.
+                    Voluptas alias molestias enim! Labore incidunt molestiae laboriosam commodi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vitae laborum natus expedita dignissimos.
+                 Distinctio eligendi sint praesentium nobis eos, a, maxime quibusdam quisquam, maiores in quos aut ratione nam?</p>
+
+                <form class="formulario">
+                    <input class="form_camp" type="number" placeholder="Cantidad" min="1">
+                    <input class="form_sub" type="submit" value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer_texto">Comic Store - Tú tienda virtual de comics!</p>
+    </footer>
+
+</body>
+
+</html>

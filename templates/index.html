@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="{{url_for('inicio')}}">
+            <img class="header_logo" src="static/img/logo.png" alt="Logotipo">
+            <p class="count-product">0</p>
+        </a>
+
+        <!--Ventana Carrito-->
+        <div class="cart-products" id="products-id">
+            <p class="close-btn" onclick="closeBtn()">X</p>
+            <h3>Mi carrito</h3>
+            <div class="card-items"></div>
+            <h2>Total: $<strong class="price-total">0</strong></h2>
+        </div>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion_enlace navegacion_enlace--activo" href="{{url_for('inicio')}}">Tienda</a>
+        <a class="navegacion_enlace" href="{{url_for('nosotros')}}">¿Quienes somos?</a>
+        <a class="navegacion_enlace" href="error.html">Contacto</a>
+        <a class="navegacion_enlace" href="error.html">Registro</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Nuestros Productos</h1>
+        <div class="grid">
+            <div class="producto">
+                <a href="{{url_for('producto')}}">
+                    <img class="pro_ima" src="static/img/1.jpg" alt="imagen comic">
+                    <a href="" data-id="1" class="btn-add-cart">Agregar Carrito</a>
+                    <div class="pro_info">
+                        <p class="pro_nom">Spider man</p>
+                        <p class="pro_pre">$10</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="producto">
+                <a href="{{url_for('producto')}}">
+                    <img class="pro_ima" src="static/img/2.jpg" alt="imagen comic">
+                    <div class="pro_info">
+                        <p class="pro_nom">Captain America</p>
+                        <p><span>35</span>$</p>
+                        <a href="" data-id="1" class="btn-add-cart">Agregar Carrito</a>
+                    </div>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="{{url_for('producto')}}">
+                    <img class="pro_ima" src="static/img/3.jpg" alt="imagen comic">
+                    <div class="pro_info">
+                        <p class="pro_nom">Falcon</p>
+                        <p class="pro_pre">$10</p>
+                    </div>
+                    <a href="" data-id="1" class="btn-add-cart">Agregar Carrito</a>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="{{url_for('producto')}}">
+                    <img class="pro_ima" src="static/img/4.jpg" alt="imagen comic">
+                    <div class="pro_info">
+                        <p class="pro_nom">Green Lantern</p>
+                        <p class="pro_pre">$10</p>
+                    </div>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="{{url_for('producto')}}">
+                    <img class="pro_ima" src="static/img/5.jpg" alt="imagen comic">
+                    <div class="pro_info">
+                        <p class="pro_nom">Thanos</p>
+                        <p class="pro_pre">$10</p>
+                    </div>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="{{url_for('producto')}}">
+                    <img class="pro_ima" src="static/img/6.jpg" alt="imagen comic">
+                    <div class="pro_info">
+                        <p class="pro_nom">X-Men</p>
+                        <p class="pro_pre">$10</p>
+                    </div>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="{{url_for('producto')}}">
+                    <img class="pro_ima" src="static/img/7.jpg" alt="imagen comic">
+                    <div class="pro_info">
+                        <p class="pro_nom">Avengers</p>
+                        <p class="pro_pre">$10</p>
+                    </div>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="{{url_for('producto')}}">
+                    <img class="pro_ima" src="static/img/8.jpg" alt="imagen comic">
+                    <div class="pro_info">
+                        <p class="pro_nom">Daredevil</p>
+                        <p class="pro_pre">$10</p>
+                    </div>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="{{url_for('producto')}}">
+                    <img class="pro_ima" src="static/img/9.jpg" alt="imagen comic">
+                    <div class="pro_info">
+                        <p class="pro_nom">Superman</p>
+                        <p class="pro_pre">$10</p>
+                    </div>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="{{url_for('producto')}}">
+                    <img class="pro_ima" src="static/img/10.jpg" alt="imagen comic">
+                    <div class="pro_info">
+                        <p class="pro_nom">Batman</p>
+                        <p class="pro_pre">$10</p>
+                    </div>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="{{url_for('producto')}}">
+                    <img class="pro_ima" src="static/img/11.jpg" alt="imagen comic">
+                    <div class="pro_info">
+                        <p class="pro_nom">Wolverine</p>
+                        <p class="pro_pre">$10</p>
+                    </div>
+                </a>
+            </div>
+            <div class="producto">
+                <a href="{{url_for('producto')}}"></a>
+                    <img class="pro_ima" src="static/img/12.jpg" alt="imagen comic">
+                    <div class="pro_info">
+                        <p class="pro_nom">Popeye</p>
+                        <p class="pro_pre">$10</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="producto">
+                <a href="{{url_for('producto')}}">
+                    <img class="pro_ima" src="static/img/13.jpg" alt="imagen comic">
+                    <div class="pro_info">
+                        <p class="pro_nom">Watchmen</p>
+                        <p class="pro_pre">$10</p>
+                    </div>
+                </a>
+            </div>
+            <div class="grafico grafico--comic"></div>
+            <div class="grafico grafico--node"></div>
+        </div>
+    </main>
+
+    <section class="contenedor comprar">
+
+        <div class="bloques">
+            <div class="bloque">
+                <img class="bloque_imagen" src="static/img/icono_1.png" alt="porque comprar">
+                <h3 class="bloque_titulo">Envios</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sit rerum ipsum omnis laboriosam
+                    voluptatem porro eaque accusantium dolorum quasi, repudiandae doloribus ex, debitis temporibus
+                    officiis distinctio obcaecati alias dolores.
+                </p>
+            </div>
+
+            <div class="bloque">
+                <img class="bloque_imagen" src="static/img/icono_2.png" alt="porque comprar">
+                <h3 class="bloque_titulo">Novedades</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellendus, cumque sint ad
+                    perspiciatis perferendis odio fugit sapiente, nemo numquam deleniti rem porro tempora. Quae
+                    consequatur nisi quas corporis alias.</p>
+            </div>
+
+            <div class="bloque">
+                <img class="bloque_imagen" src="static/img/icono_3.png" alt="porque comprar">
+                <h3 class="bloque_titulo">Promociones</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem unde sequi atque cum doloribus amet
+                    molestiae molestias perspiciatis assumenda delectus, accusamus similique aperiam est. Accusamus in
+                    voluptas expedita ex dignissimos.</p>
+            </div>
+
+            <div class="bloque">
+                <img class="bloque_imagen" src="static/img/icono_4.png" alt="porque comprar">
+                <h3 class="bloque_titulo">Online</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus minus libero voluptates
+                    necessitatibus, corrupti praesentium corporis itaque magni quibusdam iure laborum numquam placeat
+                    perspiciatis eveniet, aspernatur earum non quo mollitia!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer_texto">Comic Store - Tú tienda virtual de comics!</p>
+    </footer>
+
+    <script>
+        function showCart(x) {
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn() {
+            document.getElementById("products-id").style.display = "none";
+        }
+    </script>
+    <script src="./static/scripts/custom.js"></script>
+
+</body>
+
+</html>
